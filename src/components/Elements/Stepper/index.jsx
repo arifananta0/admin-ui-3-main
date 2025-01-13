@@ -1,4 +1,3 @@
-
 import { useContext, useState } from 'react';
 import { useTheme } from '@mui/material/styles';
 import { ThemeContext } from '../../../context/ThemeContext';
@@ -71,4 +70,4 @@ const Stepper = (props) => {
 };
 
 export default Stepper;
->>>>>>> e5d2acc (Add local file index.jsx)
+
