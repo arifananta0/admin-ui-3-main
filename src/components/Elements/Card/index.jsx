@@ -6,7 +6,7 @@ const Card = ({ title, children, className, variant }) => {
       {/* Title di luar kotak card */}
       {title && <h2 className="text-lg text-gray-02 mb-4">{title}</h2>}
       {/* Card container */}
-      <div className={`bg-white rounded-lg p-6 shadow-lg ${className} min-h-[320px]`}>
+      <div className={`bg-white rounded-lg p-6 shadow-lg ${className} min-h-[330px]`}>
         {children}
       </div>
     </div>

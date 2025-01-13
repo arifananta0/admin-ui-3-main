@@ -4,11 +4,18 @@ import SignInPage from "./pages/SignIn";
 import SignUpPage from "./pages/SignUp";
 import ForgotPassword from "./components/Fragments/ForgotPassword";
 import ErrorRouter from "./pages/errorRouter";
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 import Dashboard from "./pages/Dashboard";
 import Balance from './pages/Balance';
 import Goals from "./pages/Goals";
+import { useContext } from 'react';
+import { AuthContext } from './context/authContext';
 const App = () => {
+  const { isLoggedIn } = useContext(AuthContext);
+
+  const RequireAuth = ({ children }) => {
+    return isLoggedIn ? children : <Navigate to="/login" />;
+  };
   const myRouter = createBrowserRouter([
     {
       path: "/",
