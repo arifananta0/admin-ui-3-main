@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../fragments/Header";
+import Header from "../Fragments/Header"
 import Navbar from "../fragments/Navbar";
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
